@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { SpeedInsights } from '@vercel/speed-insights/react';
-import { Analytics } from '@vercel/analytics/react';
 
 function useAnimalSearch() {
   const [animals, setAnimals] = useState([])
@@ -41,7 +40,6 @@ function App() {
         {animals.length === 0 && 'No animals found'}
       </ul>
       <SpeedInsights />
-      <Analytics />
     </main>
   )
 }
