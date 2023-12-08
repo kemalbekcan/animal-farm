@@ -10,9 +10,8 @@ function useAnimalSearch() {
   }, []);
 
   const search = async(q) => {
-    const response = await fetch('http://localhost:8080/?' + new URLSearchParams({q}));
+    const response = await fetch('https://animal-farm-api.vercel.app/?' + new URLSearchParams({q}));
     const data = await response.json();
-    console.log('data', data);
     setAnimals(data);
 
     localStorage.setItem('lastQuery', q);
