@@ -3,7 +3,7 @@ import cors from "cors";
 
 const app = express();
 app.use(cors({
-    origin: ['https://animal-farm-api.vercel.app', 'https://www.google.com/'],
+    origin: ['https://animal-farm-frontend.vercel.app'],
     methods: ["GET", "POST"],
     credentials: true,
 }));
